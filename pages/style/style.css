@@ -1,0 +1,36 @@
+
+.opacity-zero {
+  opacity: 0;
+}
+
+.bsize-class {
+  box-sizing: border-box;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.huge-smaller {
+  width: 400px;
+}
+
+.huge-width {
+  width: 700px;
+}
+
+.width-zero {
+  width: 0;
+}
+
+.outside-viewport {
+  position: absolute;
+  left: -130%;
+}
+
+.modal {
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form other</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<div class="container main mt-5">
+    <div class="row">
+        <div class="col-sm mt-5">
+            <form class="js-submit" method="post" action="/submit">
+                <h2 class="mb-4">Other</h2>
+                <div>
+                    <div class="username mb-3" id="username"></div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button type="submit" id="other" class="btn btn-primary">Other</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const usernameValue = localStorage.getItem('username');
+    const usernameInput = document.getElementById('username');
+    usernameInput.innerHTML = usernameValue;
+  });
+</script>
+</body>
+</html>

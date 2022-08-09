@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New password without old</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container main mt-5">
+    <div class="row">
+        <div class="col-sm mt-5">
+            <form class="js-submit" method="post" action="/submit">
+                <h2>Change password</h2>
+                <div class="form-group">
+                    <label for="newPassword">New Password</label>
+                    <input type="password" class="form-control" id="newPassword" placeholder="New Password">
+                </div>
+                <div class="form-group">
+                    <label for="repeatNewPassword">New Password again</label>
+                    <input type="password" class="form-control" id="repeatNewPassword"
+                           placeholder="New Password again">
+                </div>
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

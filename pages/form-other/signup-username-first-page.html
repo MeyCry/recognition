@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup with email and password</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container main mt-5">
+    <div class="row">
+        <div class="col-sm mt-5">
+            <form class="js-submit" id="submit-form" method="post" action="/submit">
+                <h2>Sign Up</h2>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username"
+                           placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword2">Password</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword2"
+                           placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword3">Confirm Password</label>
+                    <input type="password" name="repassword" class="form-control" id="exampleInputPassword3"
+                           placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck2">
+                        <label class="form-check-label" for="gridCheck2">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+  document.querySelector('#submit-form')
+    .addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      const usernameValue = document.getElementById('username').value;
+      localStorage.removeItem('username');
+      localStorage.setItem('username', usernameValue);
+    });
+</script>
+
+</body>
+</html>

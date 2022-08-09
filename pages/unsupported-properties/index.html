@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>One page login and signup</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"/>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0 offset-md-7 js-submit" method="post" action="/submit">
+            <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="email">
+            <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="password">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Login</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container main mt-5">
+    <div class="row">
+        <div class="col-sm mt-5">
+            <form class="js-submit" method="post" action="/submit">
+                <h2>Sign Up</h2>
+                <div class="form-group">
+                    <label for="exampleInputEmail2">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail2"
+                           placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword2">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2"
+                           placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword3">Confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword3"
+                           placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck2">
+                        <label class="form-check-label" for="gridCheck2">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFirstName">visibility: hidden</label>
+                    <input type="text" class="form-control invisible" id="exampleInputFirstName"
+                           placeholder="email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputLastName">display: none</label>
+                    <input type="text" class="form-control d-none" id="exampleInputLastName"
+                           placeholder="email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFullName">opacity: 0</label>
+                    <input type="text" class="form-control opacity-zero" id="exampleInputFullName"
+                           placeholder="email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputAlias">box-sizing: border-box and padding + border = 0</label>
+                    <input type="text" class="form-control bsize-class p-0 border-0 m-0 width-zero"
+                           id="exampleInputAlias"
+                           placeholder="email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputBoxSize">tabindex: -1</label>
+                    <input type="text" class="form-control" id="exampleInputBoxSize"
+                           placeholder="email" tabindex="-1">
+                </div>
+                <div class="form-group overflow-hidden huge-smaller">
+                    <label for="exampleInputOverflow">parent has overflow: hidden</label>
+                    <input type="text" class="form-control huge-width" id="exampleInputOverflow"
+                           placeholder="email">
+                </div>
+                <p>parent is invisible - display: none</p>
+                <div class="form-group d-none">
+                    <input type="text" class="form-control huge-width" id="exampleInputParentDisplay"
+                           placeholder="email">
+                </div>
+                <p>parent is invisible - visibility: hidden</p>
+                <div class="form-group invisible">
+                    <input type="text" class="form-control"
+                           placeholder="email">
+                </div>
+                <p>parent is invisible - opacity : 0</p>
+                <div class="form-group opacity-zero">
+                    <input type="text" class="form-control"
+                           placeholder="email">
+                </div>
+                <p>element outside of the viewport</p>
+                <div class="form-group">
+                    <label>element outside of the viewport</label>
+                    <div class="child">
+                        <input type="email" class="form-control outside-viewport" placeholder="email">
+                    </div>
+                </div>
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
