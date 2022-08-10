@@ -8,4 +8,4 @@ Static pages for the test highlight
 $ npm install
 $ node server
 ```
-Static page available in localhost:9001
+Static page available in localhost:8080
