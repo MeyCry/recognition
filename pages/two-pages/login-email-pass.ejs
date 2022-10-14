@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../common/head', {title: title}); %>
+</head>
+<body>
+<div class="container main mt-5">
+    <%- include('../common/go-to-home'); %>
+
+    <div class="row">
+        <div class="col-sm mt-5">
+            <form action="login-second-page">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <button type="submit" id="login" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

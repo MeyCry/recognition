@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../common/head', {title: title}); %>
+</head>
+<body>
+
+<%- include('../common/go-to-home'); %>
+
+<div class="container main mt-5">
+    <div class="row">
+        <div class="col-sm mt-5 js-render-forms">
+            Loading...
+        </div>
+    </div>
+</div>
+
+<script>
+  const renderPlaceholder = document.querySelector(".js-render-forms");
+  const renderEmailForm = () => {
+    renderPlaceholder.innerHTML = `
+        <form class="js-submit" method="post" action="/submit">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="exampleInputEmail2">Email address</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail2"
+                       placeholder="Enter email">
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </form>
+      `;
+  };
+  const renderPasswordForm = () => {
+    renderPlaceholder.innerHTML = `
+        <form class="js-submit" method="post" action="/submit">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="exampleInputPassword2">Password</label>
+                <input type="password" name="password" class="form-control" id="exampleInputPassword2"
+                       placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword3">Confirm Password</label>
+                <input type="password" name="repassword" class="form-control" id="exampleInputPassword3"
+                       placeholder="Password">
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </form>
+      `;
+  };
+  const renderSuccessForm = () => {
+    renderPlaceholder.innerHTML = `
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Aww yeah, you successfully created an account. You can now login.</p>
+        </div>
+      `;
+  };
+
+  // "" | "email" | "password" | "success"
+  let currentPage = "";
+  renderPlaceholder.addEventListener("submit", (ev) => {
+    ev.preventDefault();
+    if (currentPage === "email") {
+      renderPasswordForm();
+      currentPage = "password";
+    } else if (currentPage === "password") {
+      renderSuccessForm();
+      currentPage = "success";
+    }
+  })
+
+  setTimeout(() => {
+    renderEmailForm();
+    currentPage = "email";
+  }, 2000);
+</script>
+
+</body>
+</html>

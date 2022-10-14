@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./common/head', {title: title}); %>
+</head>
+<body>
+
+<table class="table table-hover">
+    <thead>
+    <tr class="bg-dark">
+        <th class="text-light" scope="col">#</th>
+        <th class="text-light" scope="col">Case name</th>
+        <th class="text-light" scope="col">Options</th>
+        <th class="text-light" scope="col">Link</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="font-weight-bold text-success">
+        <th scope="row">1</th>
+        <td colspan="3">On the separate page</td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Signup with email and password</td>
+        <td>
+            <a href="/separate-page/signup-email-pass">/separate-page/signup-email-pass</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Login with email and password</td>
+        <td>
+            <a href="/separate-page/login-email-pass">/separate-page/login-email-pass</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Signup with username and password</td>
+        <td>
+            <a href="/separate-page/signup-username-pass">/separate-page/signup-username-pass</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Login with username and password</td>
+        <td>
+            <a href="/separate-page/login-username-pass">/separate-page/login-username-pass</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Signup with email, password and username</td>
+        <td>
+            <a href="/separate-page/signup-username-email-pass">/separate-page/signup-username-email-pass</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Login with email, password and username</td>
+        <td>
+            <a href="/separate-page/login-username-email-pass">/separate-page/login-username-email-pass</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Uncertain email or username</td>
+        <td>
+            <a href="/separate-page/signup-uncertain-email">/separate-page/signup-uncertain-email</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Card</td>
+        <td>
+            <a href="/separate-page/credit-card">/separate-page/credit-card</a>
+        </td>
+    </tr>
+    <tr class="font-weight-bold text-success">
+        <th scope="row">2</th>
+        <td colspan="3">Signup and Login on one page</td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Signup and login forms</td>
+        <td>
+            <a href="/one-page/login-signup">/one-page/login-signup</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Two signup and login forms</td>
+        <td>
+            <a href="/one-page/login-signup-signup">/one-page/login-signup-signup</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Several forms</td>
+        <td>
+            <a href="/one-page/several-forms">/one-page/several-forms</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Ajax signup one page (single page)</td>
+        <td>
+            <a href="/one-page/ajax-signup">/one-page/ajax-signup</a>
+        </td>
+    </tr>
+    <tr class="font-weight-bold text-success">
+        <th scope="row">3</th>
+        <td colspan="3">Two-pages</td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Signup: email - password
+        </td>
+        <td>
+            <a href="/two-pages/signup-email-pass">/two-pages/signup-email-pass</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Signup: username - password
+        </td>
+        <td>
+            <a href="/two-pages/signup-username-pass">/two-pages/signup-username-pass</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Login: email - password
+        </td>
+        <td>
+            <a href="/two-pages/login-email-pass">/two-pages/login-email-pass</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Login: username - password
+        </td>
+        <td>
+            <a href="/two-pages/login-username-pass">/two-pages/login-username-pass</a>
+        </td>
+    </tr>
+    <tr class="font-weight-bold text-success">
+        <th scope="row">4</th>
+        <td colspan="2">iFrames</td>
+        <td class="font-weight-normal">
+            <a href="/iframe/iframe-forms">/iframe/iframe-forms</a>
+        </td>
+    </tr>
+    <tr class="font-weight-bold text-success">
+        <th scope="row">5</th>
+        <td colspan="2">Unsupported properties</td>
+        <td class="font-weight-normal"><a
+                    href="/unsupported-properties">/unsupported-properties</a>
+        </td>
+    </tr>
+    <tr class="font-weight-bold text-success">
+        <th scope="row">6</th>
+        <td colspan="2">With position fixed</td>
+        <td class="font-weight-normal">
+            <a href="/position-fixed/fixed-elements">/position-fixed/fixed-elements</a>
+        </td>
+    </tr>
+    <tr class="font-weight-bold text-success">
+        <th scope="row">7</th>
+        <td colspan="3">Change password</td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Change password with signup</td>
+        <td>
+            <a href="/change-password/signup-email">/change-password/signup-email</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Change password with login</td>
+        <td>
+            <a href="/change-password-login/login-email">/change-password-login/login-email</a>
+        </td>
+    </tr>
+    <tr class="font-weight-bold text-success">
+        <th scope="row">8</th>
+        <td colspan="3">Form.Other</td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Signup: email - password
+        </td>
+        <td>
+            <a href="/form-other/signup-email">/form-other/signup-email</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Signup: username - password
+        </td>
+        <td>
+            <a href="/form-other/signup-username">/form-other/signup-username</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>
+            <p>Signup with email first page</p>
+            <p>Login: email - password</p>
+        </td>
+        <td>
+            <p>
+                <a href="/form-other/signup-email-first-page">/form-other/signup-email-first-page</a>
+            </p>
+            <p>
+                <a href="/form-other/login-email-second-page">/form-other/login-email-second-page</a>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>
+            <p>Signup with username first page</p>
+            <p>Login: username - password</p>
+        </td>
+        <td>
+            <p>
+                <a href="/form-other/signup-username-first-page">/form-other/signup-username-first-page</a>
+            </p>
+            <p>
+                <a href="/form-other/login-username-second-page">/form-other/login-username-second-page</a>
+            </p>
+        </td>
+    </tr>
+    <tr class="font-weight-bold text-success">
+        <th scope="row">9</th>
+        <td colspan="3">New password without old password</td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>
+            <p>Signup with email</p>
+        </td>
+        <td>
+            <p>
+                <a href="/new-pass-without-old/signup-email">/new-pass-without-old/signup-email</a>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>
+            <p>Signup with username</p>
+        </td>
+        <td>
+            <p>
+                <a href="/new-pass-without-old/signup-username">/new-pass-without-old/signup-username</a>
+            </p>
+        </td>
+    </tr>
+    <tr class="font-weight-bold text-success">
+        <th scope="row">10</th>
+        <td colspan="2">Hidden elements</td>
+        <td class="font-weight-normal">
+            <a href="/hidden-elements">/hidden-elements</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
