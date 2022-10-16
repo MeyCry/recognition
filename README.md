@@ -6,6 +6,6 @@ Static pages for the test highlight
 
 ```
 $ npm install
-$ node server
+$ node server/server.js
 ```
 Static page available in localhost:8080
