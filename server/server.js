@@ -28,6 +28,7 @@ app.set('views', path.join(__dirname, '..', 'pages'));
 // TODO: app.use(app.router);
 require('./request-handlers/submit');
 require('./request-handlers/pages');
+require('./request-handlers/redirects');
 
 app.listen(port);
 
