@@ -1,3 +1,4 @@
 .idea
 node_modules
 assets/log
+server/request-handlers/secret-users.json
