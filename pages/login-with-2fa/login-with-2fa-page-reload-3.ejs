@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../common/head', {title: title}); %>
+
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+
+<div class="container main mt-5">
+    <%- include('../common/go-to-home'); %>
+
+    <div class="row">
+        <div class="col-sm mt-5">
+            <form class="js-submit" method="post" action="/submit">
+                <h2>Sign Up</h2>
+                <div class="form-group">
+                    <label for="exampleInputPassword2">Password</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword2"
+                           placeholder="Password">
+                </div>
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

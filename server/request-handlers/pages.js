@@ -162,3 +162,18 @@ app.get('/new-pass-without-old/change-pass-second-page', (req, res) => {
   res.render('new-pass-without-old/change-pass-second-page', {title: generateTitlePrefix('New password without old password')});
 });
 // new-pass-without-old end
+
+// login-with-2fa
+app.get('/login-with-2fa/login-with-2fa-page-reload', (req, res) => {
+  res.render('login-with-2fa/login-with-2fa-page-reload', {title: generateTitlePrefix('Login with 2fa page reload')});
+});
+app.all('/login-with-2fa/login-with-2fa-page-reload-2fa-page', (req, res) => {
+  res.render('login-with-2fa/login-with-2fa-page-reload-2', {title: generateTitlePrefix('Login with 2fa page reload 2fa page')});
+});
+app.all('/login-with-2fa/login-with-2fa-page-reload-password-page', (req, res) => {
+  res.render('login-with-2fa/login-with-2fa-page-reload-3', {title: generateTitlePrefix('Login with 2fa page reload password page')});
+});
+app.get('/login-with-2fa/login-with-2fa-single-page', (req, res) => {
+  res.render('login-with-2fa/login-with-2fa-single-page', {title: generateTitlePrefix('Login with 2fa single page')});
+});
+// login-with-2fa end
