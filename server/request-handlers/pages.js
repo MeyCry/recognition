@@ -149,6 +149,11 @@ app.get('/form-other/login-username-second-page', (req, res) => {
     title: generateTitlePrefix('Form other. Login with username second page'),
   });
 });
+app.get('/form-other/form-fill-inputs', (req, res) => {
+  res.render('form-other/form-fill-inputs', {
+    title: generateTitlePrefix('Form other. Form fill inputs'),
+  });
+});
 // form-other end
 
 // new-pass-without-old
