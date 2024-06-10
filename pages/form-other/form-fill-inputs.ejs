@@ -91,7 +91,7 @@
                     </form>
                     <form>
                         <label for="ap_email" class="a-form-label"> Email or mobile phone number </label>
-                        <input type="email" maxlength="128" id="ap_email" name="email" tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field" aria-desrcibedby="Enter your email or mobile phone number" aria-required="true" data-expected-field-class="UsernameOrEmail">
+                        <input type="email" maxlength="128" id="ap_email" name="email" tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field" aria-desrcibedby="Enter your email or mobile phone number" aria-required="true" data-expected-field-class="UsernameOrEmailOrPhone">
                         <input type="password" maxlength="1024" id="ap-credential-autofill-hint" name="password" class="a-input-text hide" aria-required="true" data-expected-field-class="Password">
                     </form>
                     <form>
@@ -112,7 +112,7 @@
                             </label>
                             <div class="input_f27786 input__37f36">
                                 <div class="inputWrapper_ecb776 inputWrapper__92d35">
-                                    <input class="inputDefault__22335 input_f27786 inputField__9fd91" id="uid_7" name="email" type="text" placeholder="" aria-label="Email or Phone Number" required="" autocomplete="off" autocapitalize="none" autocorrect="off" maxlength="999" spellcheck="false" aria-labelledby=":r0:" value="" data-expected-field-class="UsernameOrEmail">
+                                    <input class="inputDefault__22335 input_f27786 inputField__9fd91" id="uid_7" name="email" type="text" placeholder="" aria-label="Email or Phone Number" required="" autocomplete="off" autocapitalize="none" autocorrect="off" maxlength="999" spellcheck="false" aria-labelledby=":r0:" value="" data-expected-field-class="UsernameOrEmailOrPhone">
                                 </div>
                             </div>
                         </div>
@@ -685,7 +685,7 @@
                                         </label>
                                     </span>
                                     <div class="FGIW FGIWMask FGIWFull">
-                                        <div id="ic_Dd-e" class="FGIC" style=""><input type="text" autocomplete="off" name="Dd-e" id="Dd-e" class="DFI FieldEnabled FieldRequired CTEF DocControlMask FastEvtFieldKeyDown FastFieldEnterEvent Uppercase TAAuto TAAutoLeft FastEvtFieldFocus" title="Required" value="" data-fast-enter-event="Dd-e" tabindex="0" aria-required="true" style="" placeholder="Required   " data-expected-field-class="DriversLicenseNumber"></div>
+                                        <div id="ic_Dd-e" class="FGIC" style=""><input type="text" autocomplete="off" name="Dd-e" id="Dd-e" class="DFI FieldEnabled FieldRequired CTEF DocControlMask FastEvtFieldKeyDown FastFieldEnterEvent Uppercase TAAuto TAAutoLeft FastEvtFieldFocus" title="Required" value="" data-fast-enter-event="Dd-e" tabindex="0" aria-required="true" style="" placeholder="Required   " data-expected-field-class="DriverLicenseNumberOrPassportNumber"></div>
                                     </div>
                                 </div>
                                 <div id="fc_Dd-f" data-name="Dd-f" class="FGFC FGCPTop FGCPTopVisible CTEC FGTBC FGControlMask FieldEnabled Field Hidden">
@@ -757,7 +757,7 @@
                                 <div class="row">
                                     <div class="column small-12 medium-6 large-4 clearfix">
                                         <div class="mbottom-20">
-                                            <div class="spa-input spa-input-box spa-input--sparta2"><label class="spa-input-label" data-font="cnx-medium" for="acctNumber">Card or Account Number (Last 6 digits) <span class="spa-input-label--required"></span> <span class="ada-hidden"></span></label><input type="text" pattern="[0-9]+" data-mobile-input-type="text" data-default-input-type="text" data-android-input-type="text" data-mobile-pattern="[0-9]+" data-default-pattern="[0-9]+" class="spa-input-text gis-mask gis-mask-original glance_masked" data-gis-mask="false" id="acctNumber" name="acctNumberField" autocomplete="off" maxlength="6" data-field-type="number" data-sparta-input-mask="{&quot;greedy&quot;:true,&quot;placeholder&quot;:&quot;&quot;,&quot;clearMaskOnLostFocus&quot;:true,&quot;showMaskOnHover&quot;:false,&quot;showMaskOnFocus&quot;:true,&quot;keepStatic&quot;:true,&quot;jitMasking&quot;:true,&quot;showTooltip&quot;:false,&quot;inputEventOnly&quot;:true}" required="" aria-required="true" data-required-error-message="Please verify your information" data-expected-field-class="BankAccountNumberLastSix"></div>
+                                            <div class="spa-input spa-input-box spa-input--sparta2"><label class="spa-input-label" data-font="cnx-medium" for="acctNumber">Card or Account Number (Last 6 digits) <span class="spa-input-label--required"></span> <span class="ada-hidden"></span></label><input type="text" pattern="[0-9]+" data-mobile-input-type="text" data-default-input-type="text" data-android-input-type="text" data-mobile-pattern="[0-9]+" data-default-pattern="[0-9]+" class="spa-input-text gis-mask gis-mask-original glance_masked" data-gis-mask="false" id="acctNumber" name="acctNumberField" autocomplete="off" maxlength="6" data-field-type="number" data-sparta-input-mask="{&quot;greedy&quot;:true,&quot;placeholder&quot;:&quot;&quot;,&quot;clearMaskOnLostFocus&quot;:true,&quot;showMaskOnHover&quot;:false,&quot;showMaskOnFocus&quot;:true,&quot;keepStatic&quot;:true,&quot;jitMasking&quot;:true,&quot;showTooltip&quot;:false,&quot;inputEventOnly&quot;:true}" required="" aria-required="true" data-required-error-message="Please verify your information" data-expected-field-class="BankAccountNumberOrCreditCardNumberLastSix"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -972,7 +972,7 @@
                     </form>
                     <form class="classesGenericInputBody">
                         <div class="usb--wrapper">
-                            <div data-basev="9.7.0" data-compn="@usb-shield/react-forms-input-text" data-compv="4.0.5" data-libn="@usb-shield/components-react-versioned" data-libv="2.0.0" data-testid="" class="usb--wrapper is-error      accountinput__showhidestyle glance_masked " id="wrapper_cardoraccno" lang="en"><label id="label_cardoraccno" for="input_cardoraccno" class="usb--floating-label">Card or account number</label><input id="input_cardoraccno" aria-invalid="true" name="cardoraccno" class="usb--basic-input input__show-hide cs-cardoraccno" type="text" inputmode="text" spellcheck="true" aria-required="true" autocomplete="on" lang="en" value="" data-expected-field-class="BankAccountNumber" aria-describedby="error-text_cardoraccno"></div>
+                            <div data-basev="9.7.0" data-compn="@usb-shield/react-forms-input-text" data-compv="4.0.5" data-libn="@usb-shield/components-react-versioned" data-libv="2.0.0" data-testid="" class="usb--wrapper is-error      accountinput__showhidestyle glance_masked " id="wrapper_cardoraccno" lang="en"><label id="label_cardoraccno" for="input_cardoraccno" class="usb--floating-label">Card or account number</label><input id="input_cardoraccno" aria-invalid="true" name="cardoraccno" class="usb--basic-input input__show-hide cs-cardoraccno" type="text" inputmode="text" spellcheck="true" aria-required="true" autocomplete="on" lang="en" value="" data-expected-field-class="BankAccountNumberOrCreditCardNumber" aria-describedby="error-text_cardoraccno"></div>
                         </div>
                         <div class="usb--wrapper">
                             <div data-basev="9.7.0" data-compn="@usb-shield/react-forms-input-text" data-compv="4.0.5" data-libn="@usb-shield/components-react-versioned" data-libv="2.0.0" data-testid="" class="usb--wrapper       accountinput__showhidestyle glance_masked " id="wrapper_ssn" lang="en"><label id="label_ssn" for="input_ssn" class="usb--floating-label">Last 4 digits of SSN</label><input id="input_ssn" aria-invalid="false" name="ssn" class="usb--basic-input input__show-hide cs-ssn" type="text" inputmode="text" spellcheck="true" aria-required="true" autocomplete="on" maxlength="4" lang="en" value="" data-expected-field-class="SocialSecurityLastFour"></div>
@@ -999,7 +999,7 @@
                                 </label>
                             </span>
                             <wbb-password-input-core _ngcontent-xfd-c144="" formcontrolname="ctrl" inputtype="password" _nghost-xfd-c143="" class="ng-tns-c61-1 ng-pristine ng-invalid ng-touched" required="">
-                                <div _ngcontent-xfd-c143="" class="wbb-password-input-core ng-pristine ng-invalid ng-touched"><input _ngcontent-xfd-c143="" formcontrolname="ctrl" name="passportForm.account" class="wbb-password-input-core-native sm_cobrowsing_disabled_field ng-pristine ng-invalid ng-touched" autocomplete="off" id="test-required-accountnumber-password-id" type="password" aria-required="true" aria-invalid="false" data-expected-field-class="BankAccountNumber"></div>
+                                <div _ngcontent-xfd-c143="" class="wbb-password-input-core ng-pristine ng-invalid ng-touched"><input _ngcontent-xfd-c143="" formcontrolname="ctrl" name="passportForm.account" class="wbb-password-input-core-native sm_cobrowsing_disabled_field ng-pristine ng-invalid ng-touched" autocomplete="off" id="test-required-accountnumber-password-id" type="password" aria-required="true" aria-invalid="false" data-expected-field-class="BankAccountNumberOrCreditCardNumber"></div>
                             </wbb-password-input-core>
                         </div>
                         <div class="mat-form-field-infix ng-tns-c61-0">
