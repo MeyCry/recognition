@@ -1,3 +1,6 @@
+@view-transition {
+  navigation: auto;
+}
 
 .opacity-zero {
   opacity: 0;
