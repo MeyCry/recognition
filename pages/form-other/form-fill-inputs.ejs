@@ -331,6 +331,34 @@
                     </form>
                     <form><input data-tracking-ref="WFInput-input-" id="username" name="username" type="text" autocomplete="off" tabindex="0" class="WFInput__inputField___bKfh0 pmask" data-testid="input-username" data-focus-target="true" value="" style="padding-left: 16px;" minlength="0" maxlength="14" aria-required="false" data-expected-field-class="UsernameOrEmail"></form>
                     <form><input _ngcontent-home-c123="" autocomplete="off" class="idp-input ng-pristine ng-valid ng-star-inserted ng-touched" aria-invalid="false" aria-label="SkyMiles Number Or Username*" aria-required="false" name="textfield" placeholder="" type="text" value="" style="width: 100%;" data-expected-field-class="UsernameOrEmail"></form>
+                    <form>
+                        <div role="dialog" class="zm-dialog mini-screen-enlargement" aria-describedby="customDescribe4" aria-labelledby="dialog-title-2990-1090">
+                            <button class="dialog-temp-node" aria-hidden="true">Aria Button</button>
+                            <div class="zm-dialog__header">
+                                <span id="dialog-title-2990-1090" role="heading" aria-level="2" class="zm-dialog__title">Turn Off Two-factor Authentication</span>
+                            </div>
+                            <div class="zm-dialog__body">
+                                <p id="customDescribe4">You will no longer be using these methods to authenticate your identity when you sign in to your Zoom account. Once turned off, all of your configurations will be reset.</p>
+                                <p>Enter your password to disable two-factor authentication</p>
+                                <div class="password-input zm-input zm-input--small is-empty">
+                                    <input type="password" autocomplete="" name="" placeholder="Password" aria-required="true" aria-label="Enter password to turn off the Two-factor Authentication" focusfirst="" class="zm-input__inner" data-expected-field-class="Password">
+                                    <span class="zm-input__suffix">
+                                        <span class="zm-input__suffix-inner"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="zm-dialog__footer">
+                                <span class="dialog-footer">
+                                    <button disabled="disabled" aria-disabled="true" type="button" class="zm-button--danger zm-button--small is-disabled zm-button" focusfirst="">
+                                        <span class="zm-button__slot">Turn Off</span>
+                                    </button>
+                                    <button type="button" class="zm-button--plain zm-button--small zm-button">
+                                        <span class="zm-button__slot">Cancel</span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -1925,6 +1953,40 @@
                     </form>
                     <form>
                         <input type="text" placeholder="" name="credentials.totp" id="input75" value="" aria-label="" autocomplete="off" data-expected-field-class="OneTimePassword">
+                    </form>
+                    <form>
+                        <div>
+                            <span>
+                                <p>Etsy setup</p>
+                                <div class="wt-text-title">2. Enter the six-digit code from your app</div>
+                                <span class="wt-text-body">You should see the code in your app after you've scanned the QR code or entered the key above.</span>
+                            </span>
+                            <fieldset>
+                                <div class="wt-mt-xs-4">
+                                    <input type="tel" class="wt-input" id="two-factor-code" data-expected-field-class="OneTimePassword">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+                    <form>
+                        <p>Etsy turn-off</p>
+                        <div class="wt-overlay__modal wt-overlay--animation-done">
+                            <div class="wt-overlay__header">
+                                <h5 class="wt-text-heading">Enter code to turn off 2FA</h5>
+                            </div>
+                            <div class="wt-overlay__main">
+                                <div class="wt-validation wt-text-left-xs">
+                                    <p class="wt-text-body-01 wt-mb-xs-4">For security purposes, open your authenticator app and find the six-digit code in the section labeled “Etsy.” Then, enter the code here to turn off 2FA.</p>
+                                    <label class="wt-label">Your code</label>
+                                    <input type="text" class="wt-input input" data-expected-field-class="OneTimePassword">
+                                </div>
+                            </div>
+                            <div class="wt-overlay__footer">
+                                <div class="wt-overlay__footer__action">
+                                    <button type="button" class="wt-btn wt-btn--filled">Turn off 2FA</button>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                     <!-- Assumption -->
                     <form>
