@@ -182,3 +182,9 @@ app.get('/login-with-2fa/login-with-2fa-single-page', (req, res) => {
   res.render('login-with-2fa/login-with-2fa-single-page', {title: generateTitlePrefix('Login with 2fa single page')});
 });
 // login-with-2fa end
+
+// iframe-testing
+app.get('/iframe-testing/iframe-with-form', (req, res) => {
+  res.render('iframe-testing/iframe-with-form', {title: generateTitlePrefix('Iframe testing')});
+});
+// iframe-testing end
