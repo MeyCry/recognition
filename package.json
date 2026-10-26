@@ -1,10 +1,10 @@
 {
   "name": "test",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "## Preparation",
   "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test \"test/*.test.js\"",
     "start:dev": "nodemon server/server.js",
     "start": "node server/server.js"
   },
