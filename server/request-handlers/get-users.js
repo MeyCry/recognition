@@ -33,7 +33,7 @@ app.get('/get-users', (req, res) => {
 });
 
 app.put('/free-user', (req, res) => {
-  const userName = req.body.username;
+  const userName = req.body?.username;
   if (!userName) {
     res.status(400).send('No username provided');
     return;
